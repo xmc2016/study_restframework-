@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22557a3e-484f-4842-b576-289105ec543e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_rest_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_rest_api/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,8 +114,16 @@
       <updated>1593766809129</updated>
       <workItem from="1593766862592" duration="2283000" />
       <workItem from="1594015066909" duration="40000" />
-      <workItem from="1594112006439" duration="20313000" />
+      <workItem from="1594112006439" duration="27389000" />
     </task>
+    <task id="LOCAL-00001" summary="django rest framework 序列化">
+      <created>1594190702977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594190702978</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +139,21 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="django rest framework 序列化" />
+    <option name="LAST_COMMIT_MESSAGE" value="django rest framework 序列化" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="336" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594172734932">
       <screen x="0" y="0" width="1440" height="920" />
@@ -146,26 +163,30 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="460" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594112085411" />
+    <state x="330" y="64" key="CommitChangelistDialog2" timestamp="1594190701787">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="330" y="64" key="CommitChangelistDialog2/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594190701787" />
     <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1594015101523">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594015101523" />
-    <state width="1382" height="271" key="GridCell.Tab.0.bottom" timestamp="1594189653561">
+    <state width="1382" height="298" key="GridCell.Tab.0.bottom" timestamp="1594196967406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="271" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594189653561" />
-    <state width="1382" height="271" key="GridCell.Tab.0.center" timestamp="1594189653561">
+    <state width="1382" height="298" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594196967406" />
+    <state width="1382" height="298" key="GridCell.Tab.0.center" timestamp="1594196967406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="271" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594189653561" />
-    <state width="1382" height="271" key="GridCell.Tab.0.left" timestamp="1594189653561">
+    <state width="1382" height="298" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594196967406" />
+    <state width="1382" height="298" key="GridCell.Tab.0.left" timestamp="1594196967406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="271" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594189653561" />
-    <state width="1382" height="271" key="GridCell.Tab.0.right" timestamp="1594189653561">
+    <state width="1382" height="298" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594196967406" />
+    <state width="1382" height="298" key="GridCell.Tab.0.right" timestamp="1594196967406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="271" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594189653561" />
+    <state width="1382" height="298" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594196967406" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1594172515396">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
