@@ -1,3 +1,5 @@
 from django.test import TestCase
 
-# Create your tests here.
+# from learn_api.serializers import SnippetSerializer
+# serializer = SnippetSerializer()
+# print(repr(serializer))
