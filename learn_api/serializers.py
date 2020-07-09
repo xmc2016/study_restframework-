@@ -7,19 +7,22 @@ class SnippetSerializer(serializers.ModelSerializer):
     #owner会在创建新的Snippet的时候拥有User的各个属性，那么在API中要让owner显示id还是用户名，
     # 为了提高可读性，答案当然是显示用户名了，所以我们在SnippetSerializer 下面增加一个字段：
     owner = serializers.ReadOnlyField(source='owner.username')
+    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight',format='html')
+
     class Meta:
         model = Snippet
-        fields = ('id','title','code','linenos','language','style','owner')
+        fields = ('url','id','highlight','owner',
+                  'title','code','linenos','language','style')
 
 
 class UserSerializer(serializers.ModelSerializer):
 
     #因为'snippets' 在用户模型中是一个反向关联关系。在使用 ModelSerializer 类时它默认不会被包含，所以我们需要为它添加一个显式字段。
-    snippets = serializers.PrimaryKeyRelatedField(many=True,queryset=Snippet.objects.all())
-
+   # snippets = serializers.PrimaryKeyRelatedField(many=True,queryset=Snippet.objects.all())
+    snippets = serializers.HyperlinkedIdentityField(many=True,view_name='snippet-detail',read_only=True)
     class Meta:
         model = User
-        fields =('id','username','snippets')
+        fields =('url','id','username','snippets')
 
 
 
