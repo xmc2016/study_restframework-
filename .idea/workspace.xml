@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="22557a3e-484f-4842-b576-289105ec543e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +113,7 @@
       <workItem from="1593766862592" duration="2283000" />
       <workItem from="1594015066909" duration="40000" />
       <workItem from="1594112006439" duration="31748000" />
-      <workItem from="1594258698030" duration="1150000" />
+      <workItem from="1594258698030" duration="7743000" />
     </task>
     <task id="LOCAL-00001" summary="django rest framework 序列化">
       <created>1594190702977</created>
@@ -139,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594259618939</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="django rest framework （mixed-in）的通用视图">
+      <created>1594259972811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594259972811</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +184,8 @@
     <MESSAGE value="django rest framework 请求与响应" />
     <MESSAGE value="django rest framework 基于APIView" />
     <MESSAGE value="django rest framework  使用混合（mixins）" />
-    <option name="LAST_COMMIT_MESSAGE" value="django rest framework  使用混合（mixins）" />
+    <MESSAGE value="django rest framework （mixed-in）的通用视图" />
+    <option name="LAST_COMMIT_MESSAGE" value="django rest framework （mixed-in）的通用视图" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594172734932">
@@ -184,30 +196,30 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="460" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594112085411" />
-    <state x="330" y="64" key="CommitChangelistDialog2" timestamp="1594259617534">
+    <state x="330" y="64" key="CommitChangelistDialog2" timestamp="1594259971632">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="330" y="64" key="CommitChangelistDialog2/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259617534" />
+    <state x="330" y="64" key="CommitChangelistDialog2/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259971632" />
     <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1594015101523">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594015101523" />
-    <state width="1382" height="225" key="GridCell.Tab.0.bottom" timestamp="1594259847452">
+    <state width="1382" height="145" key="GridCell.Tab.0.bottom" timestamp="1594265879417">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="225" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259847452" />
-    <state width="1382" height="225" key="GridCell.Tab.0.center" timestamp="1594259847449">
+    <state width="1382" height="145" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594265879417" />
+    <state width="1382" height="145" key="GridCell.Tab.0.center" timestamp="1594265879415">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="225" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259847449" />
-    <state width="1382" height="225" key="GridCell.Tab.0.left" timestamp="1594259847446">
+    <state width="1382" height="145" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594265879415" />
+    <state width="1382" height="145" key="GridCell.Tab.0.left" timestamp="1594265879415">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="225" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259847446" />
-    <state width="1382" height="225" key="GridCell.Tab.0.right" timestamp="1594259847451">
+    <state width="1382" height="145" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594265879415" />
+    <state width="1382" height="145" key="GridCell.Tab.0.right" timestamp="1594265879415">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="225" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594259847451" />
+    <state width="1382" height="145" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594265879415" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1594172515396">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -230,7 +242,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/learn_api/views.py</url>
-          <line>9</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
