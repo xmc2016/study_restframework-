@@ -112,7 +112,7 @@
       <workItem from="1594015066909" duration="40000" />
       <workItem from="1594112006439" duration="31748000" />
       <workItem from="1594258698030" duration="15253000" />
-      <workItem from="1594359318511" duration="2460000" />
+      <workItem from="1594359318511" duration="6699000" />
     </task>
     <task id="LOCAL-00001" summary="django rest framework 序列化">
       <created>1594190702977</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594359736093</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dsf 支持自定义的字段筛选">
+      <created>1594362008597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594362008597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +215,8 @@
     <MESSAGE value="django rest framework 经过身份验证的请求获得读写访问权限，未经身份验证的请求将获得只读访问权限" />
     <MESSAGE value="django rest framework 只有创建用户才可以更新删除它" />
     <MESSAGE value="dsf 针对当前用户过滤" />
-    <option name="LAST_COMMIT_MESSAGE" value="dsf 针对当前用户过滤" />
+    <MESSAGE value="dsf 支持自定义的字段筛选" />
+    <option name="LAST_COMMIT_MESSAGE" value="dsf 支持自定义的字段筛选" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594172734932">
@@ -219,30 +227,30 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="460" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594112085411" />
-    <state x="330" y="64" key="CommitChangelistDialog2" timestamp="1594359734893">
+    <state x="330" y="64" key="CommitChangelistDialog2" timestamp="1594362007404">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="330" y="64" key="CommitChangelistDialog2/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594359734893" />
+    <state x="330" y="64" key="CommitChangelistDialog2/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594362007404" />
     <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1594015101523">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594015101523" />
-    <state width="1382" height="283" key="GridCell.Tab.0.bottom" timestamp="1594361368995">
+    <state width="1382" height="283" key="GridCell.Tab.0.bottom" timestamp="1594364754233">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="283" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594361368995" />
-    <state width="1382" height="283" key="GridCell.Tab.0.center" timestamp="1594361368995">
+    <state width="1382" height="283" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594364754233" />
+    <state width="1382" height="283" key="GridCell.Tab.0.center" timestamp="1594364754232">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="283" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594361368995" />
-    <state width="1382" height="283" key="GridCell.Tab.0.left" timestamp="1594361368995">
+    <state width="1382" height="283" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594364754232" />
+    <state width="1382" height="283" key="GridCell.Tab.0.left" timestamp="1594364754232">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="283" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594361368995" />
-    <state width="1382" height="283" key="GridCell.Tab.0.right" timestamp="1594361368995">
+    <state width="1382" height="283" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594364754232" />
+    <state width="1382" height="283" key="GridCell.Tab.0.right" timestamp="1594364754233">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="283" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594361368995" />
+    <state width="1382" height="283" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1920.1040@0.0.1440.920" timestamp="1594364754233" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1594172515396">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

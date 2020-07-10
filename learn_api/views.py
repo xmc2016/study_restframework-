@@ -38,7 +38,6 @@ class SnippetHighlight(generics.GenericAPIView):
 
 class SnippetList(generics.ListCreateAPIView):
 
-
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
@@ -50,20 +49,40 @@ class SnippetList(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save(owner =self.request.user)
 
-class PurchaseList(generics.ListAPIView):
-    queryset = Snippet.objects.all()
-    serializer_class = SnippetSerializer
-    filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
-    filterset_fields = ['language','style']
-
-
-
 
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,
                           IsOwnerOrReadOnly,)
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
+
+
+class PurchaseList(generics.ListAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly,)
+    #根据字段过滤
+    filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+    filterset_fields  = ['language','style']
+
+class PurchaseList2(generics.ListAPIView):
+    serializer_class = SnippetSerializer
+
+    #根据查询参数过滤
+    def get_queryset(self):
+        """
+        This view should return a list of all the purchases for
+        the user as determined by the username portion of the URL.
+        """
+        queryset = Snippet.objects.all()
+        language = self.request.query_params.get('language', None)
+        print(language)
+        if language is not None:
+            return queryset.filter(language=language)
+        return queryset
+
+
 
 
 

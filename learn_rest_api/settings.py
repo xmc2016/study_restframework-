@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learn_api.apps.LearnApiConfig',
     'rest_framework',
+    'django_filters',
 ]
 
 
