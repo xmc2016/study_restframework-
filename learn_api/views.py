@@ -14,7 +14,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import renderers
 import django_filters.rest_framework
-
+from rest_framework import filters
 @api_view(['GET'])
 def api_root(request,format=None):
 
@@ -65,6 +65,20 @@ class PurchaseList(generics.ListAPIView):
     #根据字段过滤
     filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
     filterset_fields  = ['language','style']
+
+
+
+class PurchaseListSearch(generics.ListAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly,)
+    #根据字段过滤
+ #   filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+    #filterset_fields  = ['language','style']
+    filter_backends = [filters.SearchFilter]
+    search_fields  = ['language','style']
+
 
 class PurchaseList2(generics.ListAPIView):
     serializer_class = SnippetSerializer

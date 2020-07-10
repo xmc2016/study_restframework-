@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'learn_api.apps.LearnApiConfig',
     'rest_framework',
     'django_filters',
+    'crispy_forms',
 ]
 
 
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'learn_rest_api.urls'
