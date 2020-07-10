@@ -38,8 +38,15 @@ class SnippetHighlight(generics.GenericAPIView):
 
 class SnippetList(generics.ListCreateAPIView):
 
+
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
+
+    def get_queryset(self):
+
+        user = self.request.user
+        return Snippet.objects.filter(owner=user)
+
     # 登录后才能创建，更新和删除代码片段
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 #这个perform_create() 可以让用户在通过POST请求创建一个新的Snippet时，
